@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background: #0f172a;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+
+body{
+    background:#020617;
+    color:#fff;
+    transition:0.3s;
+}
+
+body.light{
+    background:#f8fafc;
+    color:#020617;
+}
+
+.theme-toggle{
+    position:fixed;
+    top:20px;
+    right:20px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+/* Profile */
+.profile{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.container{
+    display:flex;
+    gap:60px;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.image-box img{
+    width:260px;
+    height:300px;
+    
+    border:5px solid #38bdf8;
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{box-shadow:0 0 15px #38bdf8;}
+    to{box-shadow:0 0 35px #38bdf8;}
+}
+
+.info h1{
+    font-size:42px;
+}
+
+.info h3{
+    color:#38bdf8;
+    height:28px;
+    margin-bottom:10px;
+}
+
+.social a{
+    color:#38bdf8;
+    margin-right:15px;
+    font-size:20px;
+}
+
+.social a:hover{
+    color:#0ea5e9;
+}
+
+.info p{
+    max-width:500px;
+    margin-top:20px;
+    line-height:1.7;
+}
+
+/* Skills */
+.skills{
+    padding:60px;
+}
+
+.skill{
+    margin:15px 0;
+}
+
+.bar{
+    background:#1e293b;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.bar div{
+    height:10px;
+    background:#38bdf8;
+}
+
+/* Experience */
+.experience{
+    padding:60px;
+}
+
+.experience ul{
+    list-style:none;
+}
+
+.experience li{
+    margin:10px 0;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #0f172a;
+    color: #fff;
+    font-size: 14px;
+}
